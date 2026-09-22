@@ -1,0 +1,151 @@
+[2026-09-22 14:55:43,592] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.48:5000
+[2026-09-22 14:55:43,592] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2026-09-22 14:55:53,523] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:55:53] "GET / HTTP/1.1" 200 -
+[2026-09-22 14:56:09,319] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:56:09] "GET /predictdata HTTP/1.1" 200 -
+[2026-09-22 14:56:39,451] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 14:56:39,498] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:56:39] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 14:56:48,050] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:56:48] "GET /predictdata HTTP/1.1" 200 -
+[2026-09-22 14:57:19,055] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 14:57:19,058] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:57:19] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 14:57:38,147] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 14:57:38,148] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:57:38] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 14:57:40,400] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:57:40] "GET /predictdata HTTP/1.1" 200 -
+[2026-09-22 14:58:05,529] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 14:58:05,532] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 14:58:05] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 15:01:04,570] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:01:04] "GET /predictdata HTTP/1.1" 200 -
+[2026-09-22 15:01:28,774] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 15:01:28,776] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:01:28] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 15:01:45,548] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 15:01:45,549] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:01:45] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 15:01:50,773] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.get.form('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 15:01:50,775] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:01:50] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 15:06:46,813] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.form.get('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 15:06:46,815] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:06:46] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 15:06:50,518] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.form.get('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 15:06:50,521] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:06:50] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2026-09-22 15:06:53,774] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:06:53] "GET /predictdata HTTP/1.1" 200 -
+[2026-09-22 15:07:18,354] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\mlproject\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 23, in predict_datapoint
+    gender= request.form.get('gender'),
+AttributeError: 'Request' object has no attribute 'get'
+[2026-09-22 15:07:18,356] 97 werkzeug - INFO - 127.0.0.1 - - [22/Sep/2026 15:07:18] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
